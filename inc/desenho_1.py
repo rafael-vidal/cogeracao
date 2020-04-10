@@ -53,7 +53,7 @@ def desenho_1 (canvas):
     linha7_3 = canvas.create_line([processo_x, turbina1_y + 2.5*escala, processo_x, dessuperaquecedor_y], fill = 'red', width = 2, arrow = 'last')
     linha7_4 = canvas.create_line([desaerador_x + 1.8*0.2*escala, turbina1_y + 2.5*escala, desaerador_x + 1.8*0.2*escala, desaerador_y], fill = 'red', width = 2, arrow = 'last')
     linha8_1 = canvas.create_line([processo_x, dessuperaquecedor_y, processo_x, processo_y-0.35*escala], fill = 'red', width = 2, arrow = 'last')
-    linha8_2 = canvas.create_line([processo_x, processo_y-0.35*escala, processo_x, desaerador_y], fill = 'red', width = 2, arrow = 'last')
+    linha8_2 = canvas.create_line([processo_x, processo_y-0.35*escala, processo_x, desaerador_y], fill = 'blue', width = 2, arrow = 'last')
     linha9_1 = canvas.create_line([dessuperaquecedor_x + 3*escala, bomba2_y, dessuperaquecedor_x + 3*escala, dessuperaquecedor_y+0.35*escala], fill = 'blue', width = 2)
     linha9_2 = canvas.create_line([dessuperaquecedor_x + 3*escala, dessuperaquecedor_y+0.35*escala, dessuperaquecedor_x + 2.6*escala, dessuperaquecedor_y+0.35*escala], fill = 'blue', width = 2, arrow = 'last')
     
@@ -81,6 +81,6 @@ def desenho_1 (canvas):
     desenhar_ponto(processo_x, dessuperaquecedor_y - 4*escala/10, canvas, 12, 'E', 'red')
     desenhar_ponto(desaerador_x + 1.8*0.2*escala, dessuperaquecedor_y + escala, canvas, 13, 'E', 'red')
     desenhar_ponto(processo_x, dessuperaquecedor_y + escala, canvas, 14, 'E', 'red')
-    desenhar_ponto(processo_x, dessuperaquecedor_y + 2.5*escala, canvas, 15, 'E', 'red')
+    desenhar_ponto(processo_x, dessuperaquecedor_y + 2.5*escala, canvas, 15, 'E', 'blue')
     desenhar_ponto(bomba2_x + 0.9*escala, bomba2_y, canvas, 16, 'N', 'blue')
     desenhar_ponto(caldeira_x + escala, caldeira_y + 4*escala, canvas, 17, 'E', 'blue')
