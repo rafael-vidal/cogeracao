@@ -25,8 +25,8 @@ from inc.desenho_1 import desenho_1
 from inc.desenho_2 import desenho_2
 from inc.cogeracao import cogeracao
 import CoolProp.CoolProp as CP
+import ctypes
 
 
 if __name__ == '__main__':
     cogeracao()
-       

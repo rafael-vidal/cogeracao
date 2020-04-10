@@ -23,6 +23,7 @@ import matplotlib.pyplot as plt
 import random
 from inc.desenho_1 import desenho_1
 from inc.desenho_2 import desenho_2
+import ctypes
 
   
 class App(Tk):
@@ -31,6 +32,10 @@ class App(Tk):
         self.notebook = ttk.Notebook(width = 900, height = 662)
         self.add_tabs()
         self.notebook.grid(row=0)
+
+        whnd = ctypes.windll.kernel32.GetConsoleWindow()
+        if whnd != 0:
+            ctypes.windll.user32.ShowWindow(whnd, 0)
         
     def add_tabs(self):
         self.tab1 = TabOne(self)
