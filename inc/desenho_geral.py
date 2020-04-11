@@ -7,8 +7,8 @@
 #                       (rafael.vidal@poli.ufrj.br)
 #
 #
-#                                                                    27/02/2020
 # =============================================================================
+
 
 def desenhar_bomba(x, y, n, escala, canvas): #center coordinates, radius
     r = escala/2

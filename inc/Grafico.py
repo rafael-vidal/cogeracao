@@ -7,13 +7,13 @@
 #                       (rafael.vidal@poli.ufrj.br)
 #
 #
-#                                                                    27/02/2020
 # =============================================================================
 
-import numpy as np
-from inc.Ciclo import ciclo 
 
-def graphic(params, graphic_params):
+import numpy as np
+from inc.ciclo import ciclo 
+
+def grafico(params, graphic_params):
     
     tm, cv, ce, fb, pci, T1, dT, T15, p1, dp, p4, p6, m1, a1, a2, nc, nb1, nb2, nt1, nt2, configuracao = params
     x, x0, x1, y = graphic_params

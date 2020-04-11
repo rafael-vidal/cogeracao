@@ -7,14 +7,14 @@
 #                       (rafael.vidal@poli.ufrj.br)
 #
 #
-#                                                                    27/02/2020
 # =============================================================================
+
 
 from tkinter import *
 from tkinter import ttk
 import os
-from inc.Ciclo import ciclo
-from inc.Grafico import graphic
+from inc.ciclo import ciclo
+from inc.grafico import grafico
 import numpy as np
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib
@@ -24,6 +24,7 @@ import random
 from inc.desenho_1 import desenho_1
 from inc.desenho_2 import desenho_2
 import ctypes
+from inc.errors import Error
 
   
 class App(Tk):
@@ -33,9 +34,9 @@ class App(Tk):
         self.add_tabs()
         self.notebook.grid(row=0)
 
-        whnd = ctypes.windll.kernel32.GetConsoleWindow()
-        if whnd != 0:
-            ctypes.windll.user32.ShowWindow(whnd, 0)
+ #       whnd = ctypes.windll.kernel32.GetConsoleWindow()
+ #       if whnd != 0:
+ #           ctypes.windll.user32.ShowWindow(whnd, 0)
         
     def add_tabs(self):
         self.tab1 = TabOne(self)
@@ -48,8 +49,16 @@ class App(Tk):
         self.notebook.add(self.tab4,text="Sobre     ")
         
     def calculate_cycle(self):
-        params = self.tab1.get_params()  
-        params = list(map(lambda x: float(x), params))
+        params = self.tab1.get_params()
+
+        if '' in params:
+            raise(Error("Todos os parâmetros de entrada devem ser preenchidos."))
+
+        try:
+            params = list(map(lambda x: float(x), params))
+        except:
+            raise(Error("Os parâmetros de entrada devem ser numéricos."))
+
         results, df = ciclo(params)
         self.tab2.set_results(results, df)
         
@@ -58,7 +67,7 @@ class App(Tk):
         params = list(map(lambda x: float(x), params))
         graphic_params = self.tab3.get_graphic_params()
         
-        x_graphic, y_graphic = graphic(params, graphic_params)
+        x_graphic, y_graphic = grafico(params, graphic_params)
         self.tab3.set_graphic(x_graphic, y_graphic)
         
   
