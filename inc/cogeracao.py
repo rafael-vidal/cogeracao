@@ -34,9 +34,9 @@ class App(Tk):
         self.add_tabs()
         self.notebook.grid(row=0)
 
- #       whnd = ctypes.windll.kernel32.GetConsoleWindow()
- #       if whnd != 0:
- #           ctypes.windll.user32.ShowWindow(whnd, 0)
+        whnd = ctypes.windll.kernel32.GetConsoleWindow()
+        if whnd != 0:
+            ctypes.windll.user32.ShowWindow(whnd, 0)
         
     def add_tabs(self):
         self.tab1 = TabOne(self)
@@ -93,7 +93,7 @@ class TabOne(Frame):
         
         self.entryp1 = ttk.Entry(self.frame0, width=10, justify = 'center')
         self.entryp1.grid(row = 1, column = 1, padx = padx_, pady = pady_)
-        self.entryp1.insert(0, '286')
+        self.entryp1.insert(0, '416.66')
         
         
         ########## ESPAÇO P2 ##########
@@ -102,7 +102,7 @@ class TabOne(Frame):
         
         self.entryp2 = ttk.Entry(self.frame0, width=10, justify = 'center')
         self.entryp2.grid(row = 2, column = 1, padx = padx_, pady = pady_)
-        self.entryp2.insert(0, '454.53')
+        self.entryp2.insert(0, '420')
         
         
         ########## ESPAÇO P3 ##########
@@ -120,7 +120,7 @@ class TabOne(Frame):
         
         self.entryp4 = ttk.Entry(self.frame0, width=10, justify = 'center')
         self.entryp4.grid(row = 4, column = 1, padx = padx_, pady = pady_)
-        self.entryp4.insert(0, '28.5')
+        self.entryp4.insert(0, '24.72')
         
         
         ########## ESPAÇO P5 ##########
@@ -129,7 +129,7 @@ class TabOne(Frame):
         
         self.entryp5 = ttk.Entry(self.frame0, width=10, justify = 'center')
         self.entryp5.grid(row = 5, column = 1, padx = padx_, pady = pady_)
-        self.entryp5.insert(0, '7.736')
+        self.entryp5.insert(0, '8.329')
 
        
         #############################
@@ -146,7 +146,7 @@ class TabOne(Frame):
         
         self.entry1 = ttk.Entry(self.frame1, width=10, justify = 'center')
         self.entry1.grid(row = 1, column = 1, padx = padx_, pady = pady_)
-        self.entry1.insert(0, '530')
+        self.entry1.insert(0, '400')
         
         
         ########## ESPAÇO 2 ##########
@@ -164,7 +164,7 @@ class TabOne(Frame):
         
         self.entry3 = ttk.Entry(self.frame1, width=10, justify = 'center')
         self.entry3.grid(row = 3, column = 1, padx = padx_, pady = pady_)
-        self.entry3.insert(0, '124.7')
+        self.entry3.insert(0, '127.41')
         
         #############################
         ########## FRAME 2 ##########
@@ -179,7 +179,7 @@ class TabOne(Frame):
         
         self.entry4 = ttk.Entry(self.frame2, width=10, justify = 'center')
         self.entry4.grid(row = 4, column = 1, padx = padx_, pady = pady_)
-        self.entry4.insert(0, '78.6')
+        self.entry4.insert(0, '43')
         
         
         ########## ESPAÇO 5 ##########
@@ -188,7 +188,7 @@ class TabOne(Frame):
         
         self.entry5 = ttk.Entry(self.frame2, width=10, justify = 'center')
         self.entry5.grid(row = 5, column = 1, padx = padx_, pady = pady_)
-        self.entry5.insert(0, '10')
+        self.entry5.insert(0, '0')
         
         
         ########## ESPAÇO 6 ##########
@@ -197,7 +197,7 @@ class TabOne(Frame):
         
         self.entry6 = ttk.Entry(self.frame2, width=10, justify = 'center')
         self.entry6.grid(row = 6, column = 1, padx = padx_, pady = pady_)
-        self.entry6.insert(0, '2.45')
+        self.entry6.insert(0, '2.5')
         
         
         ########## ESPAÇO 7 ##########
@@ -206,7 +206,7 @@ class TabOne(Frame):
     
         self.entry7 = ttk.Entry(self.frame2, width=10, justify = 'center')
         self.entry7.grid(row = 7, column = 1, padx = padx_, pady = pady_)
-        self.entry7.insert(0, '0.07')
+        self.entry7.insert(0, '0.08')
         
         
         #############################
@@ -222,7 +222,7 @@ class TabOne(Frame):
         
         self.entry8 = ttk.Entry(self.frame3, width=10, justify = 'center')
         self.entry8.grid(row = 8, column = 1, padx = padx_, pady = pady_)
-        self.entry8.insert(0, '160')
+        self.entry8.insert(0, '220')
         
 
         ########## ESPAÇO 9 ##########
@@ -231,7 +231,7 @@ class TabOne(Frame):
 
         self.entry9 = ttk.Entry(self.frame3, width=10, justify = 'center')
         self.entry9.grid(row = 10, column = 1, padx = padx_, pady = pady_)
-        self.entry9.insert(0, '0.1744')
+        self.entry9.insert(0, '0.17727')
         
         
         ########## ESPAÇO 10 ##########
@@ -240,7 +240,7 @@ class TabOne(Frame):
         
         self.entry10 = ttk.Entry(self.frame3, width=10, justify = 'center')
         self.entry10.grid(row = 11, column = 1, padx = padx_, pady = pady_)
-        self.entry10.insert(0, '0.093')
+        self.entry10.insert(0, '0')
         
         
         #############################
@@ -256,7 +256,7 @@ class TabOne(Frame):
         
         self.entry11 = ttk.Entry(self.frame4, width=10, justify = 'center')
         self.entry11.grid(row = 12, column = 1, padx = padx_, pady = pady_)
-        self.entry11.insert(0, '78')
+        self.entry11.insert(0, '72.79')
         
         
         ########## ESPAÇO 12 ##########
@@ -265,7 +265,7 @@ class TabOne(Frame):
         
         self.entry12 = ttk.Entry(self.frame4, width=10, justify = 'center')
         self.entry12.grid(row = 13, column = 1, padx = padx_, pady = pady_)
-        self.entry12.insert(0, '75')
+        self.entry12.insert(0, '80')
         
         
         ########## ESPAÇO 13 ##########
@@ -274,7 +274,7 @@ class TabOne(Frame):
         
         self.entry13 = ttk.Entry(self.frame4, width=10, justify = 'center')
         self.entry13.grid(row = 14, column = 1, padx = padx_, pady = pady_)
-        self.entry13.insert(0, '75')
+        self.entry13.insert(0, '80')
         
         
         ########## ESPAÇO 14 ##########
@@ -283,7 +283,7 @@ class TabOne(Frame):
         
         self.entry14 = ttk.Entry(self.frame4, width=10, justify = 'center')
         self.entry14.grid(row = 15, column = 1, padx = padx_, pady = pady_)
-        self.entry14.insert(0, '84')
+        self.entry14.insert(0, '80.07')
         
         
         ########## ESPAÇO 15 ##########
@@ -292,7 +292,7 @@ class TabOne(Frame):
         
         self.entry15 = ttk.Entry(self.frame4, width=10, justify = 'center')
         self.entry15.grid(row = 16, column = 1, padx = padx_, pady = pady_)
-        self.entry15.insert(0, '85.8')
+        self.entry15.insert(0, '83.65')
         
         
         #############################

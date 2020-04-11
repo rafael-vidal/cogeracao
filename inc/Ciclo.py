@@ -218,6 +218,9 @@ def ciclo (params):
         d[16] = CP.PropsSI('D', 'P', p[16], 'H', h[16], 'Water')
         s[16] = CP.PropsSI('S', 'P', p[16], 'H', h[16], 'Water')
 
+        if h[16] > 0.999 * CP.PropsSI('H', 'P', p[16], 'Q', 0, 'Water') + 0.001 * CP.PropsSI('H', 'P', p[16], 'Q', 1, 'Water'):
+            raise(Error("Os parâmetros de entrada fornecidos levam à entrada de vapor na Bomba 2."))
+
         # Estado 17
         h17s = h[16] + 1/d[16] * (p[17] - p[16])
         h[17] = h[16] + (h17s - h[16])/nb2
